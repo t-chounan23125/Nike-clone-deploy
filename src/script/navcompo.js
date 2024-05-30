@@ -8,7 +8,7 @@ class Navbar extends HTMLElement {
                 <div class="uppernav">
                     <nav class="left">
                         <img id="jordan" src="../src/Image/Jordan_logo.svg" alt="logo">
-                        <a href="converse.html"><img id="converse" src="../src/Image/Converse-Logo.png" alt="logo"><a/>
+                        <a href="/src/converse.html"><img id="converse" src="../src/Image/Converse-Logo.png" alt="logo"><a/>
                     </nav>
                     <nav class="right">
                         <a href="#findastore">Find a Store <span>|</span></a>
@@ -21,12 +21,12 @@ class Navbar extends HTMLElement {
             <div class="undernav-container">
                 <div class="undernav">
                     <nav class="left">
-                        <a href="home.html"><img id="nike" src="../src/Image/nike.png" alt=""></a>
+                        <a href="index.html"><img id="nike" src="../src/Image/nike.png" alt=""></a>
                     </nav>
                     <ul class="menu">
                         <li id="lis-feature">
                             <div class="group " id=" hoverLink" onmouseenter="navDrop(1)" onmouseleave="navHides(-1)"> 
-                                <a href="new&feature.html">New & Featured</a>
+                                <a href="/src/new&feature.html">New & Featured</a>
                                 
                         </div>
                         </li>
@@ -320,7 +320,7 @@ class Navbar extends HTMLElement {
                         <p>Jordan</p>
                     </div>
                     <div class="jordan-logo">
-                        <a href="converse.html"><img src="./Image/Converse-Logo.png" alt=""><a/>
+                        <a href="/src/converse.html"><img src="./Image/Converse-Logo.png" alt=""><a/>
                         <p>Converse</p>
                     </div>
               
