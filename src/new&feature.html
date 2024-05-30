@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <link rel="stylesheet" href="./css/n&f.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>New Featured</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <my-navbar></my-navbar>
+    <!-- End Navbar -->
+
+    <!-- Start Main Content -->
+    <div class="content-container">
+        
+        <div class="w-[100%] bg-[#eae9e9] h-[55px]"></div>
+        
+        <div>
+            
+            <div class="text-center relative z-0 w-[100%]">
+                
+                <div class="max-w-[1920px] relative text-center w-[100%] inline-block">
+            <!-- header position -->
+                    <div class=" sticky top-0 left-0 translate-y-0 z-[9] bg-white">
+                        <header class="px-[48px] py-[15px] max-w-[1920px]">
+                            <!-- wall-header cntent -->
+                            <div class="pt-[8px] flex flex-wrap items-end justify-between">
+                                <!-- wall header title -->
+                                <h1 class="mt-[-12px] pb-[2px] flex-grow-1 flex-shrink-1 text-[24px]">
+                                    New Releases <span>(1199)</span>
+                                </h1>
+                                <!-- wall herder nav -->
+                                <nav class="flex">
+                                    <!-- left nav -->
+                                    <button class="flex text-[18px] pr-[25px] ">
+                                        <span class="pr-[8px]  ">Hide Filters</span>
+                                        <img class="mt-[6px] ml-[6px]" src=".//Image/filter (1).png" alt="">
+                                    </button>
+                                    
+                                    <div class="relative max-w-[300px] flex" >
+                                        <button class="flex items-center text-[18px]">
+                                            <span>Sort By</span>
+                                            <div class="ml-[7px] mt-[5px]">
+                                                <img src="./Image/down-chevron.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </header>
+                    </div>
+           
+                    <!-- result body -->
+                    <div class="flex">
+                                <!-- ln-scroller-->
+                        <div class="content-start  max-h-[943px] max-[960px]:w-[260px]  sticky  top-[55px] bottom-0 max-[960px]:ml-[-260px]  ">
+                                    <!-- simple bar wraper -->
+                            <div class="overflow-hidden ">
+                                        <!-- simple bar height auto -->
+                                <div ></div>
+                                        <!-- simple mask -->
+                                <div class=" left-0 top-0 bottom-0 right-0 z-0 h-auto w-auto overflow-hidden">
+                                            <!-- left nav wraper -->
+                                    <div class=" w-[240px] pb-[1em] pl-[48px] mr-[45px] "> 
+                                        <nav>
+                                                    <!-- css-10 -->
+                                            <div>
+                                                        <!-- pick up today -->
+                                                <div class="text-left pb-[20px] mb-[20px] leading-6 border-b-[1px] border-[#c2c0c0]">
+                                                            <!-- fis -->
+                                                    <div class="inline-flex">
+                                                        <div class="flex flex-col justify-center font-medium text-lg">Pick Up Today</div>
+                                                    
+                                                        <div>
+                                                            <div class="flex flex-col justify-center">
+                                                                <button class="modal-button"><img class=" w-[40px]" src="./Image/off-button (1).png" alt=""></button>
+                                                                        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Start Side bar  -->
+                                            <div class="border-b-[1px] border-[#c2c0c0]">
+                                                <!-- catagories -->
+                                                <div class="pb-[46px]">
+                                                    <!-- catagories content -->
+                                                    <div class="catagories ">
+                                                        <a href="#shoes">Shoes</a>
+                                                        <a href="#shirt">Top & T-Shirts</a>
+                                                        <a href="#Shorts">Shorts</a>
+                                                        <a href="#Hoodies">Hoodies & Pullovers</a>
+                                                        <a href="#Jackets">Jackets & Vests</a>
+                                                        <a href="#Pants">Pants & Tights</a>
+                                                        <a href="#Swimming">Swimming</a>
+                                                        <a href="#Socks">Socks</a>
+                                                        <a href="#Accesories">Accesories & Equipment</a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Side bar  -->
+                                                    
+                                            <div>
+                                                <!--filters css -->
+                                               <li-filters data-source="lisfilterNewFeature"></li-filters>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Start Product grid  -->
+                            <!-- product grid -->
+                            <div class="min-[960px]:pl-[40px] pr-[48px] min-[960px]:w-[100%] max-w-[1920px] relative">
+                                <main>
+                                    <section class="text-center">
+                                        <!-- product-grid--items  component-->
+                                        <div class="flex flex-col">
+                                            <card-container data-source="row1"></card-container>
+                                            <card-container data-source="row2"></card-container>
+                                            <card-container data-source="row3"></card-container>
+                                            <card-container data-source="row4"></card-container>
+                                            <card-container data-source="row5"></card-container>
+                                            <card-container data-source="row6"></card-container>
+
+                                        </div>
+
+                                    </section>
+                                </main>
+                            </div>
+                        <!-- End Product grid  -->
+
+                    </div>
+                    
+                </div>
+               
+                
+                    
+                </div>
+
+            </div>  
+        </div>
+        
+    </div>
+    <!-- Start Main Content -->
+
+    <!-- Start Footer -->
+    <ni-footer></ni-footer> 
+    <!-- End Footer -->
+<script src="script/footercompo.js"></script>
+<script src="./script/navcompo.js"></script>
+<script src="./script/sidebarcompo.js" type="module"></script>
+<script src="./script/gridCard.js" type="module"></script>
+
+
+</body>
+</html>

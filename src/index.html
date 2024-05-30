@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    
+    <title>clone Nike</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <my-navbar></my-navbar>
+    <!-- End Navbar -->
+
+    <!-- Start Main content -->
+    <div class="content-container">
+
+    <!-- Start Hero Cover -->
+
+        <div class="cover">
+            <img id="origin" src="/src/Image/newcover.jpeg" alt="">
+            <img  id="respons" src="/src/Image/respon-cover.jpeg" alt="">
+        </div>
+        <div class="hero">
+            <div class="head-section">
+                <h3>Fly With The 
+                    <br>
+                    Jordan fam</h3>
+            </div>
+            <div class="paragraph">
+                <p>Join us for three days of exclusive drops, special offers, and more.</p>
+            </div>
+            <div class="shop-button">
+                <div class="button">
+                    <a href="#shop">Shop</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Cover -->
+
+        <!-- Start Middle Image Grid -->
+        <div class="img-wrap">
+            <div class="pic">
+                <img  id="women" src="/src/Image/running.jpeg" alt="women">
+                <div class="overlay">
+                    <p class="">For Expecting Mom <br>
+                    <span>Mom Collection</span></p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic">
+                <img id="shoes" src="/src/Image/momandkid.jpeg" alt="">
+                <div class="overlay">
+                    <p class="">Feel Unreal <br>
+                    <span>Air Max Dn</span></p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic">
+                <img  id="people" src="/src/Image/girls.jpeg" alt="">
+                <div class="overlay">
+                    <p  >New from Nike Running <br>
+                    <span>The Y2Kolor Collection</span></p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic">
+                <img id="basket" src="/src/Image/whitetshirt.jpeg" alt="">
+                <div class="overlay">
+                    <p class="">JOnh Doe <br>
+                        <span>Sport Life Style</span>
+                    </p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-resp">
+                <img  id="women" src="/src/Image/runningresp.jpeg" alt="women">
+                <div class="overlay">
+                    <p class="">For Expecting Mom <br>
+                    <span>Mom Collection</span></p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-resp">
+                <img id="shoes" src="/src/Image/kidnmomresp.jpeg" alt="">
+                <div class="overlay">
+                    <p class="">Feel Unreal <br>
+                    <span>Air Max Dn</span></p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-resp">
+                <img  id="people" src="/src/Image/pinkresp.jpeg" alt="">
+                <div class="overlay">
+                    <p  >New from Nie Running <br>
+                    <span>The Y2Kolor Collection</span></p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-resp">
+                <img id="basket" src="/src/Image/whitetshirtresp.jpeg" alt="">
+                <div class="overlay">
+                    <p class="">JOnh Doe <br>
+                        <span>Sport Life Style</span>
+                    </p>
+                    <div class="shop-button-w">
+                        <div class="button">
+                            <a href="#shop">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="title-hero">
+            <div class="head-section">
+            <h3>New this Week</h3>
+            </div>
+            <div class="button-wrap">
+                <div class="shop-button-women">
+                    <div class="button">
+                        <a href="#shop">Shop Women's New Arrivals</a>
+                    </div>
+                </div>
+                <div class="shop-button-men">
+                    <div class="button">
+                        <a href="#shop">Shop Men's New Arrivals</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Middle Image Grid -->
+
+        <!-- Start Horizontal Image -->
+        <div class="hori-img">
+            <img src="./Image/horimg1.png" alt="people">
+            
+        </div>
+        <div class="hori-resp">
+            <img src="./Image/hrimg2.png" alt="person">
+        </div>
+    
+    <!-- End Horizontal Image -->
+
+    <!-- Start Carousel -->
+        <div class="shoes">
+            <div class="title-carousel">
+                <p>Shop By Classic</p>
+            </div>
+            <div class="body-carousel">
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carousel">
+                        <div class="image-list">
+                            <img src="../src/Image/greenshoes.jpeg" alt="img" draggable="false">
+                            <img src="../src/Image/dunk.jpeg" alt="img" draggable="false">
+                            <img src="../src/Image/airforce1.jpeg" alt="img" draggable="false">
+                            <img src="../src/Image/blazer.jpeg" alt="img" draggable="false">
+                            <img src="../src/Image/vomero.jpeg" alt="img" draggable="false">
+                            <img src="../src/Image/airmax.jpeg" alt="img" draggable="false">
+                            <img src="../src/Image/airforce1.jpeg" alt="img" draggable="false">
+                            <img src="../src/Image/greenshoes.jpeg" alt="img" draggable="false">
+                        </div>
+                        <i id="right" class="fa-solid fa-angle-right"></i>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- End Carousel -->
+
+        <!-- Start Membership Section -->
+            
+        <div class="membership-container">
+            <div class="membership-wrapper">
+                <div class="section">
+                    <div class="titile-membership">
+                        <div class="carousel-header">
+                            <div class="mb6">
+                                <h2>Nike membership</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slide-wraper">
+                            <div class="pict">
+                                <img src="../src/Image/stair.jpeg" alt="" id="stair">
+                                <div class="overlay">
+                                    <p class="">Member Product <br>
+                                        <span>Your Exclusive Access</span>
+                                    </p>
+                                    <div class="shop-button-w">
+                                        <div class="button">
+                                            <a href="#shop">Shop</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="pict" id="mid">
+                                <img src="../src/Image/yoga.jpeg" alt="" id="yoga">
+                                <div class="overlay">
+                                    <p class="">Sport & Wellness apps<br>
+                                        <span>Movement Where You're At</span>
+                                    </p>
+                                    <div class="shop-button-w">
+                                        <div class="button">
+                                            <a href="#shop">Move</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="pict">
+                                <img src="../src/Image/orange.jpeg" alt="" id="orange">
+                                <div class="overlay">
+                                    <p class="">Nike by You <br>
+                                        <span>Your Customization Service</span>
+                                    </p>
+                                    <div class="shop-button-w">
+                                        <div class="button">
+                                            <a href="#shop">Shop</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End Membership Section -->
+    </div>
+    <!-- End Main content -->
+
+     <!-- Start  Footer -->
+     <div class="footer-container">
+        <div class="menu-wrapper">
+            <div class="merchmenu">
+                
+                <div class="list-footer">
+                    <h4>Featured</h4>
+                    <ul class="">
+                        <li><a href="">Air Force 1</a></li>
+                        <li><a href="">Jordan 1</a></li>
+                        <li><a href="">Metcon</a></li>
+                        <li><a href="">Air Max 270</a></li>
+                        <li><a href="">Air Max 97</a></li>
+                        <li><a href="">Air Max 90</a></li>
+                        <li><a href="">Blazer</a></li>
+                        <li><a href="">Pegasus</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="list-footer">
+                    <h4>Shoes</h4>
+                    <ul class=">
+                        <li><a href="">All Shoes</a></li>
+                        <li><a href="">Jordan Shoes</a></li>
+                        <li><a href="">Running Shoes</a></li>
+                        <li><a href="">Baasketball Shoes</a></li>
+                        <li><a href="">Tennis Shoes</a></li>
+                        <li><a href="">Training Shoes</a></li>
+                        <li><a href="">Custom Shoes</a></li>
+                        <li><a href="">Sale Shoes</a></li>
+                        <li><a href="">Soccer Cleats</a></li>
+                    </ul>
+                </div >
+                
+                <div class="list-footer ">
+                    <h4>Clothing</h4>
+                    <ul class="">
+                        <li><a href="">All Clothing</a></li>
+                        <li><a href="">Tops & T-Shirts</a></li>
+                        <li><a href="">Shorts</a></li>
+                        <li><a href="">Hoodies & Pullovers</a></li>
+                        <li><a href="">Joggers & Sweatpants</a></li>
+                        <li><a href="">Sports Bras</a></li>
+                        <li><a href="">Pants & Tights</a></li>
+                        <li><a href="">Socks</a></li>
+                        <li><a href="">Yoga</a></li>
+                        <li><a href="">NikeLab</a></li>
+                        <li><a href="">Big & Tall</a></li>
+                        <li><a href="">Sale Clothing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="list-footer">
+                    <h4>Kids</h4>
+                    <ul class="">
+                        <li><a href="">Infant & Toddler Shoes</a></li>
+                        <li><a href="">Kids Shoes</a></li>
+                        <li><a href="">Kids Basketball Shoes</a></li>
+                        <li><a href="">Kids Running Shoes</a></li>
+                        <li><a href="">Kids Jordan Shoes</a></li>
+                        <li><a href="">Kids Backpacks</a></li>
+                        <li><a href="">Kids Socks</a></li>
+                        <li><a href="">Kids Sale</a></li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>  
+    <footer>
+        <div class="black-footer">
+            <div class="footer-body">
+                <div class="ncss-col">
+                    
+                        <div class="wrap-link-footer" >
+                            <div class=" first" >
+                                <ul >
+                                    <li class="footer-link"><p>Resources</p> </li>
+                                    <li class="footer-link"><p>Gift Card </p> </li>
+                                    <li class="footer-link"><p>Find a Store </p></li>
+                                    <li class="footer-link"><p>Become a membership</p> </li>
+                                    <li class="footer-link"><p>Nike x nba </p> </li>
+                                    <li class="footer-link"><p>Nike Journal </p> </li>
+                                    <li class="footer-link"><p>Site Feedback </p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wrap-link-footer">
+                            <p class="header-li">Help</p>
+                            <div class="ul-footer">
+                                <ul>
+                                    <li class="footer-link"><a href="">Get Help</a></li>
+                                    <li class="footer-link"><a href="">Order </a></li>
+                                    <li class="footer-link"><a href="">Shipping and Delivetry</a></li>
+                                    <li class="footer-link"><a href=""></a></li>
+                                    <li class="footer-link"><a href=""></a></li>
+                                    <li class="footer-link"><a href=""></a></li>
+                                    <li class="footer-link"><a href=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wrap-link-footer">
+                                <p class="header-li">Company</p>
+                                <div class="ul-footer">
+                                    <ul>
+                                        <li class="footer-link"><a href="">About Nike</a></li>
+                                        <li class="footer-link"><a href="">News</a></li>
+                                        <li class="footer-link"><a href="">Careers</a></li>
+                                        <li class="footer-link"><a href="">Investors</a></li>
+                                        <li class="footer-link"><a href="">Purpose</a></li>
+                                        <li class="footer-link"><a href="">Sustainability</a></li>
+                                        
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="wrap-link-footer">
+                                <p class="header-li">Promotions & Discount</p>
+                                <div class="ul-footer">
+                                    <ul>
+                                        <li class="footer-link"><a href="">Student</a></li>
+                                        <li class="footer-link"><a href="">Military</a></li>
+                                        <li class="footer-link"><a href="">Teacher</a></li>
+                                        <li class="footer-link"><a href="">First Responders & Medicals Profestional</a></li>
+                                        <li class="footer-link"><a href="">Birthday</a></li>
+                                        <li class="footer-link"><a href=""></a></li>
+                                        
+                                    </ul>
+                                </div>
+                        </div>
+    
+                        
+                    
+                </div>
+                <div class="social-menu">
+                    <ul class="social-list">
+                        <li id="twttr"><a href=""><img src="../src/Image/twttr.png" alt=""></a></li>
+                        <li id="fb"><a href=""><img src="../src/Image/facebook.png" alt=""></a></li>
+                        <li id="yt"><a href=""><img src="../src/Image/youtube.png" alt=""></a></li>
+                        <li id="ig"> <a href=""><img src="../src/Image/instagram.png" alt=""></a></li>
+                    </ul>
+                </div> 
+                
+            </div>
+            <div class="sub-footer ">
+                <!-- pl2 -->
+                <div class="right-sub-footer">
+                    <div class="container-right">
+                        <a href="">
+                            <img src="./Image/maps-and-flags (1).png" alt="">
+                            <span>United Stat</span>
+                        </a>
+                        <div class="copyrigh-continer">
+                            <span> @ 2024 Nike, lnc, All Rights Reserved </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- pl5 -->
+                <div class="left-sub-footer">
+                    <ul class="sub-footer-menu">
+                        <li> <a href="#guide">Guides</a></li>
+                        <li> <a href="#guide">Term of Sale</a> </li>
+                        <li> <a href="#guide">Term of Use</a></li>
+                        <li> <a href="#guide">NIke Privacy Policy</a> </li>
+                        <li> <a href="#guide"><img src="./Image/rights.png" alt=""> Your Privacy Choices</a></li>
+                        
+                        <li> <a href="#guide"> CA Supply Chains Act</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </div>
+    </footer>
+    <!-- End  Footer -->
+
+<script src="./script/navcompo.js"></script>
+<script src="./script/shoes-carousel.js"></script>
+</body>
+
+</html>

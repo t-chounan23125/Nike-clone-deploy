@@ -1,0 +1,26 @@
+
+.catagories {
+    display: flex;
+    flex-direction: column;
+}
+.catagories  a {
+    color: #111111;
+    font-weight: 500;
+    white-space: normal;
+    word-wrap: break-word;
+    
+    line-height: 1.35em;
+    padding-bottom: 12px;
+    padding-right: 1.1em;
+    width: 96%;
+    position: relative;
+    text-align: left;
+    margin-left: 4px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+
+ 
+ 

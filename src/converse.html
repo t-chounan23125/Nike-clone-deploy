@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/n&f.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Converse </title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <my-navbar></my-navbar>
+    <!-- End Navbar -->
+
+    <!-- Start Main Contents -->
+    <div class="content-container">
+        
+        <div class="w-[100%] bg-[#eae9e9] h-[55px]"></div>
+        
+        <div>
+            
+            <div class="text-center relative z-0 w-[100%]">
+                
+                <div class="max-w-[1920px] relative text-center w-[100%] inline-block">
+                  <!-- header position -->
+                    <div class=" sticky top-0 left-0 translate-y-0 z-[9] bg-white">
+                        <header class="px-[48px] py-[15px] max-w-[1920px]">
+                            <
+                            <div class="pt-[8px] flex flex-wrap items-end justify-between">
+                                
+                                <h1 class="mt-[-12px] pb-[2px] flex-grow-1 flex-shrink-1 text-[24px]">
+                                    Converse Shoes <span>(39)</span>
+                                </h1>
+                                <!-- wall herder nav -->
+                                <nav class="flex">
+                                    <!-- left nav -->
+                                    <button class="flex text-[18px] pr-[25px] ">
+                                        <span class="pr-[8px]  ">Hide Filters</span>
+                                        <img class="mt-[6px] ml-[6px]" src="./Image/filter (1).png" alt="">
+                                    </button>
+                                    
+                                    <div class="relative text-[18px] max-w-[300px] flex" >
+                                        <button class="flex items-center ">
+                                            <span>Sort By</span>
+                                            <div class="ml-[7px] mt-[5px]">
+                                                <img src="./Image/down-chevron.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </header>
+                    </div>
+           
+                    <!-- result body -->
+                    <div class="flex">
+                                
+                        <div class="content-start  max-h-[943px] max-[960px]:w-[260px]  sticky  top-[55px] bottom-0 max-[960px]:ml-[-260px]  ">
+                                    
+                            <div class="overflow-y-hidden ">
+                                        >
+                                <div ></div>
+                                        <!-- simple mask -->
+                                <div class=" left-0 top-0 bottom-0 right-0 z-0 h-auto w-auto overflow-hidden">
+                                            <!-- left nav wraper -->
+                                    <div class=" w-[240px] pb-[1em] pl-[48px] mr-[45px] "> 
+                                        <nav>
+                                                    
+                                            <div>
+                                                        <!-- pick up today -->
+                                                <div class="text-left pb-[20px] mb-[20px] leading-6 border-b-[1px] border-[#c2c0c0]">
+                                                            
+                                                    <div class="inline-flex">
+                                                        <div class="flex flex-col justify-center font-medium text-lg">Pick Up Today</div>
+                                                    
+                                                        <div class="filter-container">
+                                                            <div class="flex flex-col justify-center">
+                                                                <button class="modal-button"><img class=" w-[40px]" src="./Image/off-button (1).png" alt=""></button>
+                                                                        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                    <!-- lef-nav--categories -->
+                                            <div class="border-b-[1px] border-[#c2c0c0]">
+                                                <!-- catagories -->
+                                                <div class="pb-[46px]">
+                                                    <!-- catagories content -->
+                                                    <div class="catagories ">
+                                                        <a href="#low top">Low Top</a>
+                                                        <a href="#Mid top">Mid Top</a>
+                                                        <a href="#High top">High Top</a>
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                    <!-- left-nav-filter -->
+
+                                            <!-- Start list new filters -->
+                                            <div>
+                                                <!--filters css -->
+                                                <li-filters data-source="lisfilterNewFeature"></li-filters>
+                                            </div>
+                                            <!-- End list new filters -->
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                
+                
+                        </div>
+                        <!-- End Side Bar -->
+
+                        <!-- Start Product grid  -->
+                        <!-- product grid -->
+                        <div class="min-[960px]:pl-[40px] pr-[48px] min-[960px]:w-[100%] max-w-[1920px] relative">
+                            <main>
+                                <section class="text-center">
+                                    <!-- product-grid--items -->
+                                    <div class="flex flex-col">
+                                        <card-container data-source="wrow1"></card-container>
+                                        <card-container data-source="wrow2"></card-container>
+                                        <card-container data-source="wrow3"></card-container>
+                                        <card-container data-source="wrow4"></card-container>
+                                        <card-container data-source="wrow5"></card-container>
+                                        <card-container data-source="wrow6"></card-container>
+                                        
+
+                                      </div>
+
+                                </section>
+                            </main>
+                        </div>
+                        <!-- Start Product grid  -->
+            
+                    </div>
+                    
+                </div>
+                <!-- find in store modal -->
+                
+                    
+                </div>
+
+            </div>  
+        </div>  
+    </dir>
+    <!-- End Main Contents -->
+
+    <!-- Start Footer -->
+    <ni-footer></ni-footer>
+    <!-- End Footer -->
+
+<script src="./script/navcompo.js"></script>
+<script src="./script/gridCard.js" type="module"></script>
+<script src="./script/sidebarcompo.js" type="module"></script>
+<script src="./script/footercompo.js"></script>
+
+
+</body>
+</html>
