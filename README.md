@@ -34,12 +34,12 @@ To set up this project locally, follow these steps:
     - Open a terminal or command prompt and navigate to the directory where you want to clone the project.
     - Use the `git clone` command followed by the URL of the remote repository you cloned from GitLab:
       ```bash
-      git clone https://git.clp.kr/anbschool/2nd/tech-a-project.git
+      git clone https://git.clp.kr/anbschool/2nd/tech-a/tep-chounan/tepchounan-nike-clone.git
       ```
 2. **Install Dependencies**:
     - Navigate to the cloned project directory:
       ```bash
-      cd 2nd-mission
+      cd tepchounan-nike-clone 
       ```
     - Since `node_modules` is likely excluded in the `.gitignore` file, you'll need to reinstall the project's dependencies using npm:
       ```bash

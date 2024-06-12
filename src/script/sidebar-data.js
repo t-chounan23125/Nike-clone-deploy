@@ -1,3 +1,5 @@
+
+//Side Bar New and feature Page Data
 export const NewfeatureSideData = [
     {
         title : "Sale & offers",

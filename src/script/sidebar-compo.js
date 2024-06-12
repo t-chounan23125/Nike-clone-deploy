@@ -1,10 +1,12 @@
+// Importing necessary data from external module
 import {NewfeatureSideData} from './sidebar-data.js' 
 
+// Storing sidebar data sources in an object
 const sidebarDataSource = {
     'lisfilterNewFeature' : NewfeatureSideData
 }
 
-
+// Function to generate HTML for filter container 
 const FilterContainer = (lisfilters) => {
     return `
     <div class="text-lg">
@@ -52,16 +54,23 @@ const FilterContainer = (lisfilters) => {
 
     `
 }
+
+// Custom element to render the list component
 class ListComponent extends HTMLElement {
     connectedCallback(){
+        // Get the data source attribute
         const dataAtt = this.getAttribute("data-source")
+        // Get the corresponding data source from sidebarDataSource object
         const dataSourceKey = sidebarDataSource [dataAtt]
+        // Generate HTML content and set it to innerHTML of the component
         this.innerHTML = FilterContainer(dataSourceKey)
     }
 }
+// Define custom element 'li-filters' using ListComponent
 customElements.define("li-filters", ListComponent )
 
-// fitlter drop down
+
+// Handling filter dropdown functionality
 const option = document.querySelector('.option');
 const chevbutton = document.querySelector('#chev-bttn');
 

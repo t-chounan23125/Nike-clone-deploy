@@ -1,4 +1,5 @@
-import { Data, Data2, Data4, data3, data5, data6,conversdata1, conversdata2, conversdata3, conversdata4, conversdata5, conversdata6} from './gridata.js'
+// Importing data from the gridata module
+import { Data, Data2, Data4, data3, data5, data6,conversdata1, conversdata2, conversdata3, conversdata4, conversdata5, conversdata6} from './grid-card-component.js'
 
 const dataSource = {
     'row1' : Data,
@@ -18,6 +19,7 @@ const dataSource = {
 
 }
 
+// Defining the data source object mapping row identifiers to data arrays
 const CardContainer = (cardContents) => {
     return `
         <div class="flex">
@@ -29,7 +31,7 @@ const CardContainer = (cardContents) => {
                         <div >
                             <img class="w-[100%] h-auto block" src="${content.img}" alt="">
                         </div>
-                        <div class=" px-[12px] pt-[12px] text-lg text-start ">
+                        <div class=" px-[12px] pt-[12px] min-[960px]:text-[16px] text-[14px] text-start ">
                             <h4 class="text-[#ab3a3a] font-600">${content.header}</h4>
                             <a href="#" class="font-[500]">${content.productname}</a>
                             <p class="text-gray-500 font-[300]">${content.product} <br> 1 Color </p>
@@ -45,7 +47,7 @@ const CardContainer = (cardContents) => {
         </div>
     `
 }
-
+// Custom element definition for card container
 class CardComponent extends HTMLElement {
     connectedCallback(){
         const dataAtt = this.getAttribute("data-source");
@@ -53,4 +55,5 @@ class CardComponent extends HTMLElement {
         this.innerHTML = CardContainer(dataSourceKey)
     }
 }
+// Define the custom element 'card-container'
 customElements.define("card-container", CardComponent)

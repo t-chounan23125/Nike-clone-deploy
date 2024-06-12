@@ -1,4 +1,4 @@
-
+//Footer Component
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `

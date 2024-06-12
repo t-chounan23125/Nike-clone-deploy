@@ -1,12 +1,15 @@
 
-// carousel shoes
+// // Selecting elements from the DOM
 
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
 
+// Initializing variables for drag and scroll tracking
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
+
+// Function to show or hide navigation arrows based on scroll position
 const showHideIcons = () => {
    
     let scrollWidth = carousel.scrollWidth - carousel.clientWidth; 
@@ -14,6 +17,7 @@ const showHideIcons = () => {
     arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
 
+// Adding event listeners to navigation arrow icons
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14; 
@@ -23,22 +27,27 @@ arrowIcons.forEach(icon => {
     });
 });
 
+
+// Function for auto-scrolling the carousel
 const autoSlide = () => {
-    
+    // Check if the carousel has reached the end or beginning
     if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
 
+    // Calculate the difference in position
     positionDiff = Math.abs(positionDiff); 
     let firstImgWidth = firstImg.clientWidth + 14;
     
     let valDifference = firstImgWidth - positionDiff;
 
+    // Auto-scroll based on direction of movement
     if(carousel.scrollLeft > prevScrollLeft) { 
         return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
-    
     carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 }
 
+
+// Function to handle drag start
 const dragStart = (e) => {
     
     isDragStart = true;
@@ -46,6 +55,7 @@ const dragStart = (e) => {
     prevScrollLeft = carousel.scrollLeft;
 }
 
+// Function to handle dragging
 const dragging = (e) => {
     
     if(!isDragStart) return;
@@ -57,6 +67,7 @@ const dragging = (e) => {
     showHideIcons();
 }
 
+// Function to handle drag stop
 const dragStop = () => {
     isDragStart = false;
     carousel.classList.remove("dragging");
@@ -66,6 +77,8 @@ const dragStop = () => {
     autoSlide();
 }
 
+
+// Event listeners for mouse and touch events to handle dragging
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("touchstart", dragStart);
 
@@ -76,81 +89,5 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
 
-// // mobile buger nav
 
-// const hamburger = document.querySelector(".burger");
-// const mobileNav = document.querySelector(".mobile-nav");
-// const closebttn = document.querySelector(".xbttn");
-// const container = document.querySelector(".content-container")
-
-// hamburger.addEventListener("click", () => {
-//     mobileNav.classList.toggle("openDrawer");
-//     container.classList.toggle("blur");
-    
-    
-    
-// });
-// // container.addEventListener("click", () => {
-// //   mobileNav.classList.toggle("openDrawer");
-// //   container.classList.toggle("blur");
-  
-  
-  
-// // });
-
-// closebttn.addEventListener("click", () => {
-//     mobileNav.classList.toggle("openDrawer");
-//     container.classList.toggle("blur");
-// });
-
-// // drop down nav
-// function navDrop(x){
-//     if (x === 1){
-//       document.querySelector('#new-feature').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === 2){
-//       document.querySelector('#men').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === 3){
-//       document.querySelector('#womenn').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === 4){
-//       document.querySelector('#kids').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === 5){
-//       document.querySelector('#sales').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === 6){
-//       document.querySelector('#jordan').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//   }
-//   function navHides(x){
-//     if (x === -1){
-//       document.querySelector('#new-feature').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === -2){
-//       document.querySelector('#men').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === -3){
-//       document.querySelector('#womenn').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === -4){
-//       document.querySelector('#kids').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-//     if (x === -5){
-//       document.querySelector('#sales').classList.toggle('show');
-//       document.querySelector('.content-container').classList.toggle("blur");
-//     }
-    
-//   }
 

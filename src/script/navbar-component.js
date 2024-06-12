@@ -1,3 +1,4 @@
+//Navbar Component
 class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -8,7 +9,7 @@ class Navbar extends HTMLElement {
                 <div class="uppernav">
                     <nav class="left">
                         <img id="jordan" src="../src/Image/Jordan_logo.svg" alt="logo">
-                        <a href="/src/converse.html"><img id="converse" src="../src/Image/Converse-Logo.png" alt="logo"><a/>
+                        <a href="converse.html"><img id="converse" src="../src/Image/Converse-Logo.png" alt="logo"><a/>
                     </nav>
                     <nav class="right">
                         <a href="#findastore">Find a Store <span>|</span></a>
@@ -379,7 +380,8 @@ customElements.define('my-navbar', Navbar)
 
 
 
-// mobile buger nav
+// Mobile Burger Navigation
+// Event listener for burger icon click
 
 const hamburger = document.querySelector(".burger");
 const mobileNav = document.querySelector(".mobile-nav");
@@ -400,7 +402,7 @@ closebttn.addEventListener("click", () => {
     container.classList.toggle("blur");
 });
 
-// drop down nav
+// Hover Drop Down Nav
 function navDrop(x){
     if (x === 1){
       document.querySelector('#new-feature').classList.toggle('show');
