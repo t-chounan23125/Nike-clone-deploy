@@ -39,7 +39,7 @@ To set up this project locally, follow these steps:
 2. **Install Dependencies**:
     - Navigate to the cloned project directory:
       ```bash
-      cd tepchounan-nike-clone 
+      cd tepchounan-nike-clone
       ```
     - Since `node_modules` is likely excluded in the `.gitignore` file, you'll need to reinstall the project's dependencies using npm:
       ```bash
@@ -67,11 +67,11 @@ To set up this project locally, follow these steps:
 ```plaintext
 TepChounan-Nike-Clone/
 ├── src/
-│   ├── image/
+│   ├── Image/
 │       └── [image files]
-|   ├── css/
+|   ├── Css/
 │       └── [styles files]
-|   ├── script/
+|   ├── Script/
 │       └── [scripts files]
 |       └── components/
 |            └── [components files]

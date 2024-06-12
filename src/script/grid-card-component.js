@@ -1,317 +1,59 @@
-//Grid Card Product Data
+// Importing data from the gridata module
+import { Data, Data2, Data4, data3, data5, data6,conversdata1, conversdata2, conversdata3, conversdata4, conversdata5, conversdata6} from './grid-card-data.js'
 
-export const Data = [
-    {
-        img : "./Image/feat1.png",
-        header: "Launching in SNKRS",
-        productname: "Air Jordan 1 Low x Travis Scott",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/sportswear-chill-knit-womens-tight-cropped-mini-rib-tank-top-qFZ4Mq.png",
-        header: "Best Seller",
-        productname: "Sport Wear",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat2.png",
-        header: "Just in",
-        productname: "Air Jordan 4 Retro 'Oxidised Green'",
-        product: "shoes",
-        price: "$100",
-        resp: "max-[960px]:hidden"
-    }
-]
+const dataSource = {
+    'row1' : Data,
+    'row2' : Data2,
+    'row3' : data3,
+    'row4' : Data4,
+    'row5' : data5,
+    'row6' : data6,
+    'wrow1' : conversdata1,
+    'wrow2' : conversdata2,
+    'wrow3' : conversdata3,
+    'wrow4' : conversdata4,
+    'wrow5' : conversdata5,
+    'wrow6' : conversdata6
+    
 
-export const Data2 = [
-    {
-        img : "./Image/feat3.png",
-        header: "Available in SNKRS",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$210",
-        resp: ""
-    },
-    {
-        img : "./Image/feat4.png",
-        header: "Sustainable Materials",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat5.png",
-        header: "Just In",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: "max-[960px]:hidden"
-    }
-]
 
-export const data3 = [
-    {
-        img : "./Image/feat6.png",
-        header: "Just In",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat7.jpeg",
-        header: "Sustainable Materials",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
+}
+
+// Defining the data source object mapping row identifiers to data arrays
+const CardContainer = (cardContents) => {
+    return `
+        <div class="flex">
+            ${cardContents.map((content) => `
+            <div class="relative px-[8px] md:w-[100%] lg:w-[33.33%] ${content.resp}">
+                <div class="relative mb-[18px] max-w-[592px] ">
+                    <figure>
+                    
+                        <div >
+                            <img class="w-[100%] h-auto block" src="${content.img}" alt="">
+                        </div>
+                        <div class=" px-[12px] pt-[12px] min-[960px]:text-[16px] text-[14px] text-start ">
+                            <h4 class="text-[#ab3a3a] font-600">${content.header}</h4>
+                            <a href="#" class="font-[500]">${content.productname}</a>
+                            <p class="text-gray-500 font-[300]">${content.product} <br> 1 Color </p>
+                            <p class="text-lg font-[500] pt-[12px]">${content.price}</p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+            
+            `).join("")}
         
-    },
-    {
-        img : "./Image/feat8.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: "max-[960px]:hidden"
+        </div>
+    `
+}
+// Custom element definition for card container
+class CardComponent extends HTMLElement {
+    connectedCallback(){
+        const dataAtt = this.getAttribute("data-source");
+        const dataSourceKey = dataSource[dataAtt]
+        this.innerHTML = CardContainer(dataSourceKey)
     }
-]
-
-export const Data4 = [
-    {
-        img : "./Image/feat10.jpeg",
-        header: "Coming Soon",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat11.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat12.png",
-        header: "Sustainable Materials",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const data5 = [
-    {
-        img : "./Image/feat13.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat14.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat18.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const data6 = [
-    {
-        img : "./Image/feat16.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/feat17.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes17.png",
-        header: "Best Seller",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$120",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const conversdata1 = [
-    {
-        img : "./Image/shoes1.png",
-        header: "",
-        productname: "Chuck Taylor All Star Lift Platform  Canvas",
-        product: "Women's shoes",
-        price: "$75",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes2.png",
-        header: "",
-        productname: "Chuck Taylor All Star Lift Platform  Canvas",
-        product: "Women's shoes",
-        price: "$70",
-    },
-    {
-        img : "./Image/shoes3.png",
-        header: "",
-        productname: "Run Star Hike Platform",
-        product: "Unisex shoes",
-        price: "$110",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const conversdata2 = [
-    {
-        img : "./Image/shoes4.png",
-        header: "",
-        productname: "Converse Chuck Taylor All Star High Top",
-        product: "Unisex shoes",
-        price: "$65",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes5.png",
-        header: "",
-        productname: "Converse Chuck Taylor All Star low Top",
-        product: "Unisex shoes",
-        price: "$60",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes6.png",
-        header: "",
-        productname: "Chuck Taylor All Star Lift Platform Canvas",
-        product: "Unisex shoes",
-        price: "$75",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const conversdata3 = [
-    {
-        img : "./Image/shoes7.png",
-        header: "",
-        productname: "Chuck Taylor All Star Lift Platform Canvas",
-        product: "shoes",
-        price: "$105",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes8.png",
-        header: "",
-        productname: "Run Star Hike Platform",
-        product: "shoes",
-        price: "$105",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes9.png",
-        header: "",
-        productname: "Run Star Hike Platform",
-        product: "shoes",
-        price: "$60",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const conversdata4 = [
-    {
-        img : "./Image/shoes10.png",
-        header: "",
-        productname: "Run Star HIke Platform",
-        product: "shoes",
-        price: "$65",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes11.png",
-        header: "",
-        productname: "Converse Chuck Taylor All Star High TOp",
-        product: "shoes",
-        price: "$60",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes12.png",
-        header: "",
-        productname: "Converse Chuck Taylor All Star Low Top",
-        product: "shoes",
-        price: "$100",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const conversdata5= [
-    {
-        img : "./Image/shoes13.png",
-        header: "",
-        productname: "Converse Chuck Taylor All Star High Top",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes14.png",
-        header: "",
-        productname: "Converse Chuck Taylor All Star High Top",
-        product: "shoes",
-        price: "$120",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes15.png",
-        header: "",
-        productname: "Converse x DRKSDW TuRBOWPN",
-        product: "",
-        price: "$120",
-        resp: "max-[960px]:hidden"
-    }
-]
-export const conversdata6= [
-    {
-        img : "./Image/shoes16.jpeg",
-        header: "",
-        productname: "Converse x DRKSDW TuRBOWPN",
-        product: "",
-        price: "$220",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes17.png",
-        header: "",
-        productname: "Nike V2K Run",
-        product: "shoes",
-        price: "$130",
-        resp: ""
-    },
-    {
-        img : "./Image/shoes18.png",
-        header: "Launching in SNKRS",
-        productname: "Converse CONS x Carhartt WIP",
-        product: "CTAS Pro",
-        price: "$80",
-        resp: "max-[960px]:hidden"
-    }
-]
+}
+// Define the custom element 'card-container'
+customElements.define("card-container", CardComponent)
