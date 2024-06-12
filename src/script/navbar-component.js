@@ -307,7 +307,7 @@ class Navbar extends HTMLElement {
             <div class="nav-content">
                 <div class="nav-menu-bar">
                     <ul>
-                        <div class="lis"><li id="content-list"><a href="new&feature.html"> New & Featured </a> </li><div class="text-arrow"><img id="toggle" src="../src/Image/right-chevron.png" alt=""></div></div>
+                        <div class="lis"><li id="content-list"><a href="/src/new&feature.html"> New & Featured </a> </li><div class="text-arrow"><img id="toggle" src="../src/Image/right-chevron.png" alt=""></div></div>
                         <div class="lis"><li id="content-list">Men </li><div class="text-arrow"><img id="toggle" src="../src/Image/right-chevron.png" alt=""></div></div>
                         <div class="lis"><li id="content-list">Women</li><div class="text-arrow"><img id="toggle" src="../src/Image/right-chevron.png" alt=""></div></div>
                         <div class="lis"><li id="content-list">Kids </li><div class="text-arrow"><img id="toggle" src="../src/Image/right-chevron.png" alt=""></div></div>
